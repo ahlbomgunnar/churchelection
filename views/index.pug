@@ -1,0 +1,46 @@
+doctype html
+html
+  head
+    title GunnarAhlbom
+    script(src='https://code.jquery.com/jquery-1.11.1.js')
+    script(src='/socket.io/socket.io.js')
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js")
+    script(src="https://use.fontawesome.com/e58e7af208.js")
+    style type='text/css'
+      include css/main.css
+    script
+      include js/queryhandler.js
+
+  body
+
+    div(class="container")
+
+      div(class="row")
+        div(class="menu-accent dark-primary-color")
+        nav(class="default-primary-color text-primary-color")
+          div(class="nav-wrapper")
+            a(href="/", class="brand-logo heavy-shadow") Church Election
+            a(href="#", data-activates="mobile-navbar", class="button-collapse") 
+              i(class="fa fa-bars", aria-hidden="true")
+
+            ul(id="nav-mobile", class="right hide-on-med-and-down light-shadow")
+              li(class="active")
+                a(href="/") Home
+              li
+                a(href="/vote") Vote
+              li
+                a(href="/result") Result
+
+            ul(class="side-nav", id="mobile-navbar")
+              li(class="active")
+                a(href="/") Home
+              li
+                a(href="/vote") Vote
+              li
+                a(href="/result") Result
+
+      div(class="row")
+        div(class="center-align box")
+          h1 Home
+          h5 Browse the menu above

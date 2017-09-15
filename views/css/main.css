@@ -1,0 +1,31 @@
+*                      { margin: 0; padding: 0; box-sizing: border-box; }
+body                   { font: 13px Helvetica, Arial; }
+canvas                 { -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; }
+nav                    { white-space:nowrap !important; padding:10px; height:85px; }
+select                 { border:2px solid red !important; }
+#chartcontainer        { max-height:800px; min-height:600px; min-width:400px; padding:20px; }
+.box                   { padding:50px; padding-bottom:70px; border:3px solid #333; }
+.dark-primary-color    { background: #303F9F; }
+.default-primary-color { background: #3F51B5; }
+.light-primary-color   { background: #C5CAE9; }
+.text-primary-color    { color: #FFFFFF; }
+.marginalizer	       { margin:5px; }
+.btn                   { background: #303F9F; text-shadow:1px 2px 1px #333; }
+.btn:hover 			   { background: #101C8C; }
+.btn:active			   { background: #101C8C; }
+.btn:focus             { background: #101C8C; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }
+.dropdown-content li a { color: #757575; }
+.light-shadow          { text-shadow:1px 2px 1px #333; }
+.heavy-shadow          { text-shadow:1px 2px 3px #333; }
+
+/* --- PRESET OVERRIDES --- */
+.input-field input:focus + label {
+    color: #3F51B5 !important;;}
+.row .input-field input:focus {
+    border-bottom: 1px solid #3F51B5 !important;
+    box-shadow: 0 1px 0 0 #3F51B5 !important;}
+ul.dropdown-content.select-dropdown li span {
+    color: #212121;}
